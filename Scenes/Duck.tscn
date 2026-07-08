@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bbghderwhrdc1"]
+
+[ext_resource type="Script" uid="uid://6mid1vlwkxe5" path="res://Scripts/Player.gd" id="1_ij6vw"]
+[ext_resource type="Texture2D" uid="uid://bpbe2v400l3tg" path="res://Art/Player.png" id="2_ij6vw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r2elx"]
+size = Vector2(49, 46)
+
+[node name="Duck" type="CharacterBody2D" unique_id=182467683]
+collision_mask = 14
+script = ExtResource("1_ij6vw")
+scrolling_speed = null
+gravity = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1935452646]
+visibility_layer = 2
+position = Vector2(65.5, -60)
+shape = SubResource("RectangleShape2D_r2elx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1718676769]
+position = Vector2(59, -59)
+scale = Vector2(2.5, 2.5)
+texture = ExtResource("2_ij6vw")
+flip_h = true
+hframes = 22
