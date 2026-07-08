@@ -51,7 +51,8 @@ shape = SubResource("RectangleShape2D_hnit7")
 
 [node name="BG" type="Sprite2D" parent="Background" unique_id=2106054992]
 z_index = -5
-scale = Vector2(2, 1)
+position = Vector2(0, -0.75453377)
+scale = Vector2(2, 1.5130783)
 texture = ExtResource("3_3dryh")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Background" unique_id=772506278]
